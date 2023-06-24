@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageButton
+        android:id="@+id/tbtn3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="682dp"
+        android:background="@drawable/table"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tbtn4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbtn1">
+
+    </ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3번 테이블"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tbtn3"  />
+
+    <ImageButton
+        android:id="@+id/tbtn2"
+        android:background="@drawable/table"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="353dp"
+        app:layout_constraintBottom_toTopOf="@+id/tbtn4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tbtn1"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageButton>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2번 테이블"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbtn2" />
+
+    <ImageButton
+        android:id="@+id/tbtn1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/table"
+        android:layout_marginEnd="667dp"
+        android:layout_marginBottom="353dp"
+        app:layout_constraintBottom_toTopOf="@+id/tbtn3"
+        app:layout_constraintEnd_toStartOf="@+id/tbtn2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1번 테이블"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbtn1" />
+
+
+    <ImageButton
+        android:id="@+id/tbtn4"
+        android:background="@drawable/table"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tbtn3"
+        app:layout_constraintTop_toBottomOf="@+id/tbtn2">
+
+
+    </ImageButton>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4번 테이블"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tbtn3"  />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="441dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tbtn4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="195dp"
+        android:layout_height="60dp"
+        android:background="@color/black"
+        android:text="돌아가기"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017" />
+</androidx.constraintlayout.widget.ConstraintLayout>

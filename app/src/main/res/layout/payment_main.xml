@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtDisp"
+        android:layout_width="359dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="28dp"
+        android:text="주문내역"
+        android:textColor="@color/black"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/ordlstTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="225dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="95dp"
+        android:text="1번 테이블"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="225dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="95dp"
+        android:text="2번 테이블"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox1"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="225dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="95dp"
+        android:text="3번 테이블"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="225dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="99dp"
+        android:text="4번 테이블"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3"></CheckBox>
+
+    <TextView
+        android:id="@+id/ordlstTxt"
+        android:layout_width="867dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="143dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDisp" />
+
+    <Button
+        android:id="@+id/paybtn"
+        android:text="결제하기"
+        android:textSize="20dp"
+        android:backgroundTint="@color/black"
+        android:layout_width="124dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/backbtn"
+        android:text="돌아가기"
+        android:textSize="20dp"
+        android:backgroundTint="@color/black"
+        android:layout_width="123dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
